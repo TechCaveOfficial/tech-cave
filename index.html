@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Cave</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Left vertical navbar */
+    .sidebar {
+      width: 220px;
+      background-color: #0b1a33; /* navy blue */
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .sidebar a:hover {
+      background-color: #122a52;
+    }
+
+    /* Main content */
+    .content {
+      margin-left: 220px;
+      width: calc(100% - 220px);
+      height: 100vh;
+      overflow-y: auto; /* right scrollbar */
+      padding: 40px;
+    }
+
+    section {
+      min-height: 100vh;
+      margin-bottom: 80px;
+    }
+
+    .section-title {
+      font-size: 48px; /* good size */
+      margin-bottom: 20px;
+    }
+
+    .section-subtitle {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #cccccc;
+    }
+
+    .section-content {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <a href="#forums">Forums</a>
+    <a href="#about">About</a>
+    <a href="#donate">Donate</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <section id="forums">
+      <div class="section-title">Tech Cave</div>
+      <div class="section-subtitle">Forums</div>
+      <div class="section-content">
+        Welcome to the Tech Cave forums. This is where discussions, questions, and ideas about technology live.
+        Add your forum content here.
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title">Tech Cave</div>
+      <div class="section-subtitle">About</div>
+      <div class="section-content">
+        Tech Cave is a forum focused on technology, development and innovation, write your questions and/or answers in this section
+      </div>
+    </section>
+
+    <section id="donate">
+      <div class="section-title">Tech Cave</div>
+      <div class="section-subtitle">Donate</div>
+      <div class="section-content">
+        Support Tech Cave by donating. Your contributions help keep the project alive and growing.
+        Add donation links or information here.
+      </div>
+    </section>
+  </div>
+</body>
+</html>
